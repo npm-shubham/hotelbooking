@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import useIntersectionObserver from './useIntersectionObserver';
 import './PaymentSection.css';
+import './FinalPay.css';
 
 const PaymentSection = () => {
+
+  const [containerRef, isIntersecting] = useIntersectionObserver({
+    threshold: 0.5,
+  });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setIsVisible(true);
+    }
+  }, [isIntersecting]);
+
   return (
-    <div className="payment-section">
+    <div ref={containerRef} className={`payment-section ${isVisible ? 'visible' : ''}`}>
       <h2>Payment method and Information</h2>
       <div className="price-details">
         <h3>Price Details</h3>

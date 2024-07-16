@@ -1,10 +1,23 @@
 // src/InfoSection.js
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import useIntersectionObserver from './useIntersectionObserver';
 import './InfoSection.css';
+import './FinalPay.css';
 
 const InfoSection = () => {
+  const [containerRef, isIntersecting] = useIntersectionObserver({
+    threshold: 0.5,
+  });
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    if (isIntersecting) {
+      setIsVisible(true);
+    }
+  }, [isIntersecting]);
+
   return (
-    <div className="info-section">
+    <div ref={containerRef} className={`info-section ${isVisible ? 'visible' : ''}`}>
       <h2>Information You Need To Pay Attention</h2>
       <p>Passengers are divided according to age categories.</p>
       <img 

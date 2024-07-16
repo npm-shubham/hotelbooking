@@ -7,6 +7,8 @@ import Footer from './Footer';
 function FinalPay() {
   return (
     <>
+    {/* <Footer/>
+    <Footer/> */}
     <div className="final-pay">
         <InfoSection />
         <Payment />

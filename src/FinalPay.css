@@ -1,8 +1,25 @@
-/* src/FinalPay.css */
+/* FinalPay.css */
 .final-pay {
-    display: flex; 
-    gap: 50px;
-    margin-left: 80px;
-    margin-right: 80px;
-  }
-  
+  display: flex;
+  gap: 50px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.info-section, .payment-section {
+  opacity: 0;
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.info-section {
+  transform: translateX(100%);
+}
+
+.payment-section {
+  transform: translateX(-100%);
+}
+
+.info-section.visible, .payment-section.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
