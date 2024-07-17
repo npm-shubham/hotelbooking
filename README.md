@@ -23,3 +23,4 @@ You may also see any lint errors in the console.
 
 ## Navigate the project 
     - Click on Explore More button. It will redirect you to BookingDetails page and on this page click on payment button to redirect you to FinalPay page. 
+    - Note: The link might not work, showing Bad Connection or something. Release the catched data to continue.
