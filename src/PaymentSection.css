@@ -11,6 +11,7 @@
 .price-items {
   display: flex;
   justify-content: space-between;
+  font-size: 20px;
 }
 
 .price-item {
@@ -22,8 +23,13 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
 }
 
+.greentext {
+  color: green;
+}
 .booking-for-work {
   display: flex;
   align-items: center;

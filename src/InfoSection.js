@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import useIntersectionObserver from './useIntersectionObserver';
 import './InfoSection.css';
 import './FinalPay.css';
+import image24 from './assets/image24.jpeg';
 
 const InfoSection = () => {
   const [containerRef, isIntersecting] = useIntersectionObserver({
@@ -21,7 +22,7 @@ const InfoSection = () => {
       <h2>Information You Need To Pay Attention</h2>
       <p>Passengers are divided according to age categories.</p>
       <img 
-        src="https://placehold.co/600x300" 
+        src={image24}
         alt="Description"
         className="rounded-image"
       />

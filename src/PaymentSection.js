@@ -4,7 +4,6 @@ import './PaymentSection.css';
 import './FinalPay.css';
 
 const PaymentSection = () => {
-
   const [containerRef, isIntersecting] = useIntersectionObserver({
     threshold: 0.5,
   });
@@ -22,15 +21,15 @@ const PaymentSection = () => {
       <div className="price-details">
         <h3>Price Details</h3>
         <div className="price-items">
-          <div className="price-item">$87 2 Adults</div>
-          <div className="price-item">$24 3 Children</div>
-          <div className="price-item">$12 2 Infant</div>
+          <div className="price-item"> <span className='greentext'> $87 </span> 2 Adults</div>
+          <div className="price-item"> <span className='greentext'> $24 </span> 3 Children</div>
+          <div className="price-item"> <span className='greentext'> $12 </span> 2 Infant</div>
         </div>
       </div>
       <hr />
       <div className="total">
         <span>Total(USD)</span>
-        <span>$ 456</span>
+        <span className='greentext'>$ 456</span>
       </div>
       <hr />
       <div className="booking-for-work">
