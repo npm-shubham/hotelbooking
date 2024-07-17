@@ -16,6 +16,12 @@ You may also see any lint errors in the console.
     - This function is primarily used in [FinalPay.js](./src/FinalPay.js).
     - The [useIntersectionObserver.js](./src/useIntersectionObserver.js) has the functionality which contains the main intersection observer code.
     - Please refer to [FinalPay.css](./src/FinalPay.css) to check the css of how the intersection observer api is working. 
+
+- ### View Transition API
+    - This function is implemented in the [App.js](./src/App.js). 
+    - Refer to the [TransitionWrapper.js](./src/TransitionWrapper.js) and [transitions.css](./src/transitions.css) to see the codes of View Transition API. 
+    - Note: To see the transition well navigate to any other page and click on the logo on NavBar. It will redirect yoy to Homepage and you can see the whole transition taking place. 
+
 - ### Vercel
     - I've used Vercel to host the whole project. Also since I've used the master branch to host the project, as soon as the master branch is updated the Vercel gets the updated code and updates the changes.
     - Use this [link](https://hotelbooking-woad-ten.vercel.app/) to see the hosted application.
